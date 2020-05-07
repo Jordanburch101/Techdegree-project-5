@@ -1,0 +1,46 @@
+// ======================================
+//  Mixins
+// ======================================
+
+
+
+// Media Queries ===============================
+
+// Media queries
+@mixin media($break) {            
+  @if $break == 'med' {
+    @media (min-width: $break-med) {
+      @content;             // Add 'else if' for more breakpoints
+    }          
+  }    
+}
+
+// Block Quote
+
+@mixin quote{
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid $color-primary;
+    border-radius: 5px;
+}
+
+// Grid theme
+
+@mixin theme($color) {
+    &.theme {
+        background-color: $color;
+    }
+}
+
+// Button hover
+
+@mixin lighten($color) {
+    transition: background-color .3s ease-in-out, transform .5s ease-in-out;
+    &:hover {
+        background-color: lighten($color, 15%);
+        transform: scale(1.1);
+    }
+}
