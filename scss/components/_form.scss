@@ -1,0 +1,24 @@
+.form {
+    &-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    &-search {
+        height: 50px;
+        width: 300px;
+        border: 1px solid $color-border;
+        border-radius: 6px;
+        font-size: 1em;
+        padding-left: 1em;
+        box-shadow: inset 0px 0px 20px -7px rgba(117,117,117,0.69);
+        @include media('med') {
+            width: 500px;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $color-placeholder;
+}

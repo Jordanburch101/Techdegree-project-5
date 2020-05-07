@@ -1,18 +1,89 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <meta charset="utf-8">
+    <title>An Interactive Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/lightbox/css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+    <div class="form-container">
+        <form>
+            <input class="form-search" type="text" id="search" placeholder="Search here">
+        </form>
+    </div>
+
+    <div class="img-container" id="searcharea"> <!--Main-Container-->
+        <div > <!--Img 01-->
+            <a class="img" href="images/01.jpg" data-lightbox="images" data-title="I love hay bales. 
+            Took this snap on a drive through the countryside past some straw fields.">
+            <img class="img-thumbnail" src="images/thumbnails/01.jpg" alt="Hay Bales"></a>
+        </div>
+        <div> <!--Img 02-->
+            <a class="img" href="images/02.jpg" data-lightbox="images" data-title="The lake was so calm today. 
+            We had a great view of the snow on the mountains from here.">
+            <img class="img-thumbnail" src="images/thumbnails/02.jpg" alt="Lake"></a>
+        </div>
+        <div> <!--Img 03-->
+            <a class="img" href="images/03.jpg" data-lightbox="images" data-title="I hiked to the top of 
+            the mountain and got this picture of the canyon and trees below.">
+            <img class="img-thumbnail" src="images/thumbnails/03.jpg" alt="Canyon"></a>
+        </div>
+        <div> <!--Img 04-->
+            <a class="img" href="images/04.jpg" data-lightbox="images" data-title="It was amazing to see an iceberg up close,
+             it was so cold but didn’t snow today. ">
+            <img class="img-thumbnail" src="images/thumbnails/04.jpg" alt="Iceberg"></a>
+        </div>
+        <div> <!--Img 05-->
+            <a class="img" href="images/05.jpg" data-lightbox="images" data-title="The red cliffs were beautiful. 
+            It was really hot in the desert but we did a lot of walking through the canyons.">
+            <img class="img-thumbnail" src="images/thumbnails/05.jpg" alt="Desert"></a>
+        </div>
+        <div> <!--Img 06-->
+            <a class="img" href="images/06.jpg" data-lightbox="images" data-title="Fall is coming, 
+            I love when the leaves on the trees start to change color.">
+            <img class="img-thumbnail" src="images/thumbnails/06.jpg" alt="Fall"></a>
+        </div>
+        <div> <!--Img 07-->
+            <a class="img" href="images/07.jpg" data-lightbox="images" data-title="I drove past this plantation 
+            yesterday, everything is so green!">
+            <img class="img-thumbnail" src="images/thumbnails/07.jpg" alt="Plantation"></a>
+        </div>
+        <div> <!--Img 08-->
+            <a class="img" href="images/08.jpg" data-lightbox="images" data-title="My summer vacation to the 
+            Oregon Coast. I love the sandy dunes!">
+            <img class="img-thumbnail" src="images/thumbnails/08.jpg" alt="Dunes"></a>
+        </div>
+        <div> <!--Img 09-->
+            <a class="img" href="images/09.jpg" data-lightbox="images" data-title="We enjoyed a quiet 
+            stroll down this countryside lane. ">
+            <img class="img-thumbnail" src="images/thumbnails/09.jpg" alt="Countryside Lane"></a>
+        </div>
+        <div> <!--Img 10-->
+            <a class="img" href="images/10.jpg" data-lightbox="images" data-title="Sunset at the coast! 
+            The sky turned a lovely shade of orange.">
+            <img class="img-thumbnail" src="images/thumbnails/10.jpg" alt="Sunset"></a>
+        </div>
+        <div> <!--Img 11-->
+            <a class="img" href="images/11.jpg" data-lightbox="images" data-title="I did a tour of a cave today and 
+            the view of the landscape below was breathtaking.">
+            <img class="img-thumbnail" src="images/thumbnails/11.jpg" alt="Cave"></a>
+        </div>
+        <div> <!--Img 12-->
+            <a class="img" href="images/12.jpg" data-lightbox="images" data-title="I walked through this meadow of 
+            bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <img class="img-thumbnail" src="images/thumbnails/12.jpg" alt="Bluebells"></a>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox/js/lightbox.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

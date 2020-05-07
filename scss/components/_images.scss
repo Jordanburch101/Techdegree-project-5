@@ -1,0 +1,24 @@
+// ======================================
+//  Images Partial
+// ======================================
+
+
+.img {
+    &-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;   
+        margin-left: auto;
+        margin-right: auto;
+        
+        @include media('med') {
+            max-width: $max-width;
+        }
+        
+    }
+    &-thumbnail {
+        padding: 1.5em;
+        
+    }
+}
