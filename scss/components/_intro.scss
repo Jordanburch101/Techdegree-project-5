@@ -1,0 +1,45 @@
+// ======================================
+//  Images Partial
+// ======================================
+
+
+.intro {
+    &-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.tech li {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: transform .2s ease-in-out;
+    &.javascript {
+        background-color: $color-javascript;
+        &:hover {
+            background-color: lighten($color-javascript, 20%);
+        }
+    }
+    &.jquery {
+        background-color: $color-jquery;
+        &:hover {
+            background-color: lighten($color-jquery, 20%);
+        }
+    }
+    &.light {
+        background-color: $color-light;
+        &:hover {
+            background-color: lighten($color-light, 20%);
+        }
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    
+}
