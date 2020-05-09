@@ -5,3 +5,8 @@ $(".form-search").on("keyup", function(){
     $(this).toggle($(this).html().toLowerCase().indexOf(value) > -1)
   });
 });
+
+lightbox.option({
+  'showImageNumberLabel': false,
+  'maxWidth': 600,
+});

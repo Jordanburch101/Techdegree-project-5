@@ -1,0 +1,15 @@
+// ======================================
+// Lightbox partial
+// ======================================
+
+
+.lb-data {
+    & .lb-caption {
+        text-align: center;
+        font-size: 1em;
+        color: $color-caption;
+    }
+    &Container {
+        padding-top: 15px;
+    } 
+}
