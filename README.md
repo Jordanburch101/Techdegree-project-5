@@ -12,7 +12,7 @@
 This project demonstrates my use of JavaScript and jQuery to implement a plugin called lightbox to create a responsive photo gallery allowing the user to cycle through photos and use the search bar to use keywords to filter out content.
 
 ## Screenshots
-![Example screenshot](images/Screenshot.jpg)
+![Example screenshot](images/Screenshot.png)
 
 ## Technologies
 * CSS3
